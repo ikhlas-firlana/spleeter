@@ -1,9 +1,8 @@
-FROM python:3.8.10-alpine3.13
+FROM researchdeezer/spleeter:3.7
 
 WORKDIR /srv
 
 COPY . .
 
-RUN apk update && apk add gcc
-RUN pip install conda
+ENTRYPOINT ["tail", "-f", "/dev/null"]
 
