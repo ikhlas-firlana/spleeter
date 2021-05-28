@@ -1,8 +1,7 @@
-FROM researchdeezer/spleeter:3.7
+FROM ikhlasfirlana/spleeter:latest
 
 WORKDIR /srv
 
-COPY . .
 
 ENTRYPOINT ["tail", "-f", "/dev/null"]
 
